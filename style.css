@@ -1,6 +1,6 @@
 h1 {
  font-size: 600;
- right: 200px;
+ right: 100px;
 }
 
 h2{
@@ -9,6 +9,10 @@ h2{
 
 h3{
 
+}
+
+body {
+  text-align: center;
 }
 
 main div {
