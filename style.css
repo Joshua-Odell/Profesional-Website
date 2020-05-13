@@ -19,6 +19,11 @@ main div {
   background-color: lightgray;
 }
 
+footer {
+  background-color: black;
+  color: white;
+}
+
 .thumbnail {
   width: 200px;
 }
