@@ -25,10 +25,7 @@ p {
 
 body {
   text-align: center;
-}
-
-main div {
-  background-color: lightgray;
+  background-color: lightgray
 }
 
 footer {
