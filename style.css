@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@700&family=Domine&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500&family=Cardo:wght@700&family=Domine&family=Noto+Serif+JP:wght@200;400&display=swap');
 
 
 header {
@@ -16,7 +16,11 @@ font-family: 'Domine', serif;
 }
 
 h3{
+font-family: 'Archivo', sans-serif;
+}
 
+p {
+  font-family: 'Noto Serif JP', serif;
 }
 
 body {
