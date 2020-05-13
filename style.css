@@ -33,6 +33,11 @@ footer {
   color: white;
 }
 
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
 .fl {
   a:link: white;
   a:visited: blue;
