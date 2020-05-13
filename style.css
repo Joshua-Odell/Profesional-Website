@@ -36,6 +36,12 @@ footer {
   color: white;
 }
 
+.fl {
+  a:link: white;
+  a:visited: blue;
+  a:hover: green;
+}
+
 .thumbnail {
   width: 200px;
 }
