@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500&family=Cardo:wght@700&family=Domine&family=Noto+Serif+JP:wght@200;400&display=swap');
 
-
 header {
   background-image: url(pictures/background2.jpg);
 }
 
+body {
+  text-align: center;
+  background-color: lightgray
+}
+
 h1 {
   font-family: 'Cardo', serif;
- font-size: 150px;
- text-align: center;
- vertical-align: sub;
- padding-top: 500px;
- color: white;
+  color: white;
 }
 
 h2{
@@ -24,20 +24,6 @@ font-family: 'Archivo', sans-serif;
 
 p {
   font-family: 'Noto Serif JP', serif;
-}
-
-body {
-  text-align: center;
-  background-color: lightgray
-}
-
-body div {
-  margin-top: 25px;
-}
-
-footer {
-  background-color: black;
-  color: white;
 }
 
 .item-double {
@@ -55,16 +41,62 @@ footer {
   flex-direction: row;
 }
 
+.group img {
+  width: 100%;
+}
+
+.wrapper {
+  width: 100%
+}
+
+/* need to adress the size of the profile picture in mobile*/
+.profile-picture{
+  width: 33%;
+}
+
+/* need to figure out how to change this relative to the screen*/
+.thumbnail {
+  width: 200px;
+}
+
+/* the color should be white for the links in the footer*/
+footer {
+  background-color: black;
+  color: white;
+}
+
 .fl {
   link: white;
   visited: blue;
   hover: green;
 }
 
-.thumbnail {
-  width: 200px;
-}
 
-.profile-picture {
-  width: 33%;
+@media all and (min-width: 800px){
+  h1 {
+   font-size: 150px;
+   vertical-align: sub;
+   padding-top: 500px;
+   }
+
+  body div {
+    margin-top: 25px;
+  }
+
+  .group {
+    flex-direction: column;
+  }
+
+  .wrapper {
+    width: 80%;
+    margin: auto;
+  }
+
+  .thumbnail {
+    width: 200px;
+  }
+
+  .profile-picture {
+    width: 33%;
+  }
 }
