@@ -41,6 +41,10 @@ p {
   flex-direction: row;
 }
 
+.group img {
+  width: 100%;
+}
+
 .wrapper {
   width: 100%
 }
