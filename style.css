@@ -8,8 +8,8 @@ header {
 h1 {
   font-family: 'Cardo', serif;
  font-size: Large;
- text-align: center;
- vertical-align: baseline;
+ text-align: justify;
+ vertical-align: sub;
 }
 
 h2{
