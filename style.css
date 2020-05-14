@@ -10,6 +10,7 @@ h1 {
  font-size: xx-large;
  text-align: justify;
  vertical-align: sub;
+ padding-top: 200px;
 }
 
 h2{
@@ -27,6 +28,10 @@ p {
 body {
   text-align: center;
   background-color: lightgray
+}
+
+body div {
+  margin-top: 25px;
 }
 
 footer {
@@ -50,9 +55,9 @@ footer {
 }
 
 .fl {
-  a:link: white;
-  a:visited: blue;
-  a:hover: green;
+  link: white;
+  visited: blue;
+  hover: green;
 }
 
 .thumbnail {
