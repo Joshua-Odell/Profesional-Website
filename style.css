@@ -12,6 +12,7 @@ body {
 h1 {
   font-family: 'Cardo', serif;
   color: white;
+  align-items: flex-end;
 }
 
 h2{
@@ -24,6 +25,32 @@ font-family: 'Archivo', sans-serif;
 
 p {
   font-family: 'Noto Serif JP', serif;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 0;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+}
+
+nav ul li a:hover {
+  color: ;
 }
 
 .item-double {
@@ -39,6 +66,8 @@ p {
 .group {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .group img {
@@ -72,6 +101,7 @@ footer {
 }
 
 
+
 @media all and (min-width: 400px){
   h1 {
    font-size: 150px;
@@ -88,7 +118,7 @@ footer {
   }
 
   .wrapper {
-    width: 80%;
+    width: 70%;
     margin: auto;
   }
 
