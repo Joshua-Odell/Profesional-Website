@@ -2,12 +2,12 @@
 
 
 header {
-  background-image: url(pictures/background.jpg);
+  background-image: url(pictures/background2.jpg);
 }
 
 h1 {
   font-family: 'Cardo', serif;
- font-size: 700px;
+ font-size: 300px;
  text-align: justify;
  vertical-align: sub;
  padding-top: 500px;
