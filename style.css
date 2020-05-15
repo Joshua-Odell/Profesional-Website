@@ -133,4 +133,9 @@ footer {
   body div ul {
     padding-left: 50px;
   }
+
+  h1 {
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
 }
