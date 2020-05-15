@@ -129,4 +129,8 @@ footer {
   .profile-picture {
     width: 33%;
   }
+
+  body div ul {
+    padding-left: 50px;
+  }
 }
