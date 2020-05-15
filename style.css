@@ -4,7 +4,7 @@ header {
   background-image: url(pictures/background2.jpg);
 }
 
-body {
+body div {
   text-align: center;
   background-color: lightgray
 }
