@@ -30,6 +30,7 @@ p {
 nav {
   display: flex;
   justify-content: center;
+  background-color: black;
 }
 
 nav ul {
@@ -44,7 +45,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: black;
+  color: white;
   text-decoration: none;
   padding: 0 20px 0 0;
 }
