@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset= "utf-8">
     <meta name= "viewport" content="width=device-width, initial-scal=1">
@@ -9,7 +9,9 @@
   </head>
   <body>
     <header class="group">
+      <div max-width="600px">
         <img class="item profile-picture" src="pictures/josh-alone.jpg" alt="Picture of Josh Odell">
+      </div>
         <h1 class="item-double"> Joshua Odell </h1>
     </header>
     <nav>
@@ -69,7 +71,7 @@
         <h2 id="Portfolio">
           Projects:
         </h2>
-          <div class="group">
+          <div class="group"> <!-- this is not displaying in row format and I am not sure why-->
             <div class="item">
               <h3>
                 Behave
@@ -97,32 +99,45 @@
         <h2 id="Work-History">
           Work History:
         </h2>
-        <p> I have three years managment experience and three years security experience. </p>
+        <div class="group">
+          <div class="item">
+            <p> I have three years managment experience and three years security experience. </p>
+          </div> 
+        </div>               
       </div>
       <div>
         <br>
         <h2 id="About-Me">
           About Me:
         </h2>
-        <p> I live in Eagan Minnesota, a suburb of Minneapolis-St.Paul. I love learning new things and applying myself to what I do. I am a quick and passionate study.
-          I studied social sciences for my bachelors. Now I am applying my passion for innovation and creativity as a designero get into the tech field I took a Google Certification course in IT. This variety in experience helps me to understand each situation from a different perspective.
-          I look forward to the prospect of working with talented people and learning from them. I am a developer most familiar with web-development with some experience in Python. </p>
-        <h3 style="text-align:left;">
-          My Hobbies Include:
-        </h3>
-        <ul style="text-align:left;"> <!-- get rid of center spacing here -->
-          <li> Camping in the Boundary Waters
-          <li> Spending time with family and friends
-          <li> Playing video games
-          <li> Taking walks with my wife and new puppy
-        </ul>
+        <div class="group" style="flex-direction: column;">
+          <div class="item">
+            <p> I live in Eagan Minnesota, a suburb of Minneapolis-St.Paul. I love learning new things and applying myself to what I do. I am a quick and passionate study.
+              I studied social sciences for my bachelors. Now I am applying my passion for innovation and creativity as a designero get into the tech field I took a Google Certification course in IT. This variety in experience helps me to understand each situation from a different perspective.
+              I look forward to the prospect of working with talented people and learning from them. I am a developer most familiar with web-development with some experience in Python. </p>
+          </div>
+          <div class="group item" style="flex-direction: column; text-align: center;">
+            <h3 class="item hobbies">
+              My Hobbies Include:
+            </h3>
+            <ul class=" item hobbies"> <!-- I want to place this in the center with bullet points -->
+              <li> Camping in the Boundary Waters
+              <li> Spending time with family and friends
+              <li> Playing video games
+              <li> Taking walks with my wife and new puppy
+            </ul>
+          </div>
+        </div>
       </div>
     </main>
+    <hr>
     <footer>
       <div id="Contact-Me">
-        <a class="fl" href="mailto:joshodell220@gmail.com" target="_blank"> Email </a> <br>
-        <a class="fl" href="https://github.com/Joshua-Odell" target="_blank"> GitHub </a> <br>
-        <a class="fl" href="www.linkedin.com/in/joshua-odell-07ab801a1" target="_blank"> Linkedin </a>
+        <ul>
+          <li><a class="fl" href="mailto:joshodell220@gmail.com" target="_blank"> Email </a></li>
+          <li><a class="fl" href="https://github.com/Joshua-Odell" target="_blank"> GitHub </a></li>
+          <li><a class="fl" href="www.linkedin.com/in/joshua-odell-07ab801a1" target="_blank"> Linkedin </a></li>
+        </ul>
       </div>
     </footer>
   </body>

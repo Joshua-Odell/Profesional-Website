@@ -4,19 +4,19 @@ header {
   background-image: url(pictures/background.jpg);
 }
 
-div {_
-  padding-bottom: 10px;
+body .group {
+  background-color: lightgray;
 }
 
 body div {
   text-align: center;
-  background-color: lightgray
+  
 }
 
 h1 {
   font-family: 'Cardo', serif;
   color: white;
-  align-items: flex-end;
+  align-items: center;
 }
 
 h2{
@@ -54,6 +54,30 @@ nav ul li a {
   padding: 0 20px 0 0;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-bottom: 0;
+}
+
+footer ul li {
+  list-style-type: none;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
+  
+}
+
+
 nav ul li a:hover {
   color: blue ;
 }
@@ -73,6 +97,7 @@ nav ul li a:hover {
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
+  padding-bottom: 10px;
 }
 
 .group img {
@@ -85,7 +110,9 @@ nav ul li a:hover {
 
 /* need to adress the size of the profile picture in mobile*/
 .profile-picture{
-  width: 10%;
+  max-width: 50%;
+  height: auto;
+  width: auto\9;
 }
 
 /* need to figure out how to change this relative to the screen*/
@@ -111,7 +138,7 @@ footer {
   h1 {
    font-size: 150px;
    vertical-align: sub;
-   padding-top: 500px;
+   padding-top: ;
    }
 
   body div {
@@ -135,12 +162,13 @@ footer {
     width: 33%;
   }
 
-  body div ul {
-    padding-left: 50px;
+  .hobbies {
+    list-style-position: inside;
+    text-align: center;
   }
 
   h1 {
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: flex-end ;
+    align-items: center ;
   }
 }
