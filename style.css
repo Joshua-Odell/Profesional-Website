@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500&family=Cardo:wght@700&family=Domine&family=Noto+Serif+JP:wght@200;400&display=swap');
 
 header {
-  background-image: url(pictures/background2.jpg);
+  background-image: url(pictures/background.jpg);
+}
+
+div {_
+  padding-bottom: 10px;
 }
 
 body div {
@@ -81,7 +85,7 @@ nav ul li a:hover {
 
 /* need to adress the size of the profile picture in mobile*/
 .profile-picture{
-  width: 33%;
+  width: 10%;
 }
 
 /* need to figure out how to change this relative to the screen*/

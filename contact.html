@@ -11,7 +11,7 @@
     <nav>
       <ul id="menu">
         <li><a href="index.html#Education">Education</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="portfolio.html">Projects</a></li>
         <li><a href="index.html#Work-History">Work History</a></li>
         <li><a href="index.html#About-Me">About Me</a></li>
         <li><a href="contact.html">Contact Me</a></li>
@@ -19,14 +19,20 @@
     </nav>
     <div>
       <form action="https://formspree.io/meqrobbq" method="post">
-        <label for="name">Your name:</label>
-        <input id="name" type="text" name="name" autofocus="on" required maxlength="25">
-        <label for="email">Email:</label>
-        <input id="email" type="text" name="email">
-        <label for="message"> Message:</label>
-        <textarea name="message" rows="8" cols="80"></textarea>
-        <button type="submit">Submit</button>
-      </form>
+        <div class="item">
+          <label for="name">Your name:</label>
+          <input id="name" type="text" name="name" autofocus="on" required maxlength="25">
+          <label for="email">Email:</label>
+          <input id="email" type="text" name="email">
+        </div>
+        <div>
+          <label for="message"> Message:</label>
+          <textarea name="message" rows="8" cols="80"></textarea>
+        </div>
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+    </form>
     </div>
     <footer>
       <div id="Contact-Me">
