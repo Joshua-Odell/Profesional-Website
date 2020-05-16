@@ -111,6 +111,7 @@ nav ul li a:hover {
   width: 100%
 }
 
+
 /* need to adress the size of the profile picture in mobile*/
 .profile-picture{
   max-width: 50%;
@@ -135,7 +136,13 @@ footer {
   hover: green;
 }
 
-
+.message-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 644px;
+  
+}
 
 @media all and (min-width: 800px){
   h1 {
