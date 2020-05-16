@@ -64,7 +64,7 @@ footer ul {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding-bottom: 0;
+  padding-top: 0 10px 0 0;
 }
 
 footer ul li {
@@ -77,6 +77,9 @@ footer ul li a {
   
 }
 
+form {
+  display: block;
+}
 
 nav ul li a:hover {
   color: blue ;
@@ -101,7 +104,7 @@ nav ul li a:hover {
 }
 
 .group img {
-  width: 100%;
+  width: 90%;
 }
 
 .wrapper {
@@ -134,7 +137,7 @@ footer {
 
 
 
-@media all and (min-width: 400px){
+@media all and (min-width: 600px){
   h1 {
    font-size: 150px;
    vertical-align: sub;
@@ -146,7 +149,7 @@ footer {
   }
 
   .group {
-    flex-direction: row;
+    flex-direction: row ;
   }
 
   .wrapper {
