@@ -9,18 +9,18 @@
   </head>
   <body>
     <header class="group">
-      <div max-width="600px">
-        <img class="item profile-picture" src="pictures/josh-alone.jpg" alt="Picture of Josh Odell">
+      <div >
+        <img class="item profile-picture" src="pictures/josh-alone.jpg" alt="Picture of Josh Odell" max-width="600px">
       </div>
         <h1 class="item-double"> Joshua Odell </h1>
     </header>
     <nav>
       <ul id="menu">
         <li><a href="#Education">Education</a></li>
-        <li><a href="portfolio.html">Projects</a></li>
+        <li><a href="#portfolio">Projects</a></li>
         <li><a href="#Work-History">Work History</a></li>
         <li><a href="#About-Me">About Me</a></li>
-        <li><a href="contact.html">Contact Me</a></li>
+        <li><a href="#Contact-Me">Contact Me</a></li>
       </ul>
     </nav>
     <hr>
@@ -35,7 +35,7 @@
               University of Nebraska
             </h3>
             <a href="https://www.unomaha.edu/" target="_blank">
-            <img class="thumbnail"src="pictures/UNO.jpg" alt="Univeristy of Nebraska at Omaha Thumbnail">
+            <img class="thumbnail" src="pictures/UNO.jpg" alt="Univeristy of Nebraska at Omaha Thumbnail">
             </a>
             <p>
               Bachelors of Science in Philosophy, Sociology and Religion <br>
@@ -84,6 +84,7 @@
                   I am also working with the school district to create a program to give a single point of information input.
                   This will reduce the time spent duplicating information on reports. Thus, freeing up their time to work with the kids directly.
                  This app will consist of a phone based application as well as a detailed website for the access of data. This requires full stack work </p>
+                <p>This project will use a full stack configuration with HTML, CSS and JavaScript for the website to view the data. This will also use a database language to keep the entries loged.</p>
                 <a href="https://github.com/Joshua-Odell/Behave" target="_blank"> GitHub Repository </a> <br>
             </div>
             <div class="item">
@@ -97,6 +98,7 @@
                    and logic to produce a semingly independant actor. I got some tips from more experienced people online to reduce the complexity of the 
                    code. The end result is a program that is entierly capable of beating human players. The computer uses if logic to decide where to play rather then a simple 
                    random number. Though there is situations where it can act randomly.</p>
+                <p> This project was completed entierly in Python 3</p>
                 <a href="https://github.com/Joshua-Odell/tic-tac-toe" target="_blank"> GitHub Repository </a>
             </div>
           </div>
@@ -123,23 +125,41 @@
               I studied social sciences for my bachelors. Now I am applying my passion for innovation and creativity as a designero get into the tech field I took a Google Certification course in IT. This variety in experience helps me to understand each situation from a different perspective.
               I look forward to the prospect of working with talented people and learning from them. I am a developer most familiar with web-development with some experience in Python. </p>
           </div>
-          <div class="group item" style="flex-direction: column; text-align: center;">
-            <h3 class="item hobbies">
-              My Hobbies Include:
-            </h3>
-            <ul class=" item hobbies"> <!-- I want to place this in the center with bullet points -->
-              <li> Camping in the Boundary Waters
-              <li> Spending time with family and friends
-              <li> Playing video games
-              <li> Taking walks with my wife and new puppy
-            </ul>
+          <div class="group item new" style="flex-direction: column; align-items: center; text-align: center;">
+              <h3 class="item hobbies">
+                My Hobbies Include:
+              </h3>
+              <ul class=" item hobbies"> <!-- I want to place this in the center with bullet points -->
+                <li> Camping in the Boundary Waters
+                <li> Spending time with family and friends
+                <li> Playing video games
+                <li> Taking walks with my wife and new puppy
+              </ul>
+            </div>
           </div>
         </div>
       </div>
+      <div id="Contact-Me" class="group">
+        <form class="form-container" action="https://formspree.io/meqrobbq" method="post">
+          <div class="item">
+            <label for="name">Your name:</label>
+            <input id="name" type="text" name="name" required maxlength="25">
+            <label for="email">Email:</label>
+            <input id="email" type="text" name="email">
+          </div>
+          <div class="message-container">
+            <label for="message"> Message:</label>
+            <textarea name="message" rows="8" cols="80"></textarea>
+          </div>
+          <div>
+            <button type="submit">Submit</button>
+          </div>
+      </form>
+    </div>
     </main>
     <hr>
     <footer>
-      <div id="Contact-Me">
+      <div>
         <ul>
           <li><a class="fl" href="mailto:joshodell220@gmail.com" target="_blank"> Email </a></li>
           <li><a class="fl" href="https://github.com/Joshua-Odell" target="_blank"> GitHub </a></li>

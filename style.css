@@ -17,6 +17,8 @@ h1 {
   font-family: 'Cardo', serif;
   color: white;
   align-items: center;
+  text-shadow: 2em;
+  
 }
 
 h2{
@@ -62,18 +64,20 @@ footer {
 
 footer ul {
   display: flex;
-  flex-direction: column;
+  flex-direction: flex;
   flex-wrap: wrap;
-  padding-top: 0 10px 0 0;
+  margin: 0 0 10px 0;
 }
 
 footer ul li {
   list-style-type: none;
+  margin: 0 70px 0px 70px;
 }
 
 footer ul li a {
   color: white;
   text-decoration: none;
+  padding: 0 20px 0 0;
   
 }
 
@@ -144,6 +148,14 @@ footer {
   
 }
 
+
+.hobbies {
+  display: block;
+  list-style-position: inside;
+  text-align: left;
+  
+}
+
 @media all and (min-width: 800px){
   h1 {
    font-size: 150px;
@@ -173,8 +185,10 @@ footer {
   }
 
   .hobbies {
+    display: block;
     list-style-position: inside;
-    text-align: center;
+    text-align: left;
+    
   }
 
   h1 {
