@@ -1,167 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset= "utf-8">
-    <meta name= "viewport" content="width=device-width, initial-scal=1">
-    <title>Joshua Odell</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <header class="group">
-      <div>
-        <img class="item profile-picture" src="pictures/josh-alone.jpg" alt="Picture of Josh Odell" >
-      </div>
-      <h1 class="item-double"> Joshua Odell </h1>
-    </header>
-    <nav>
-      <ul id="menu">
-        <li><a href="#Education">Education</a></li>
-        <li><a href="#Portfolio">Projects</a></li>
-        <li><a href="#Work-History">Work History</a></li>
-        <li><a href="#About-Me">About Me</a></li>
-        <li><a href="#Contact-Me">Contact Me</a></li>
-      </ul>
-    </nav>
-    <hr>
-    <main class="wrapper">
-      <br>
-      <h2 id="Education">
-        Education:
-      </h2>
-      <div class="group">
-          <div class="item">
-            <h3>
-              University of Nebraska
-            </h3>
-            <a href="https://www.unomaha.edu/" target="_blank">
-            <img class="thumbnail" src="pictures/UNO.jpg" alt="Univeristy of Nebraska at Omaha Thumbnail">
-            </a>
-            <p>
-              Bachelors of Science in Philosophy, Sociology and Religion <br>
-              August 2020
-            </p>
-          </div>
-          <div class="item">
-            <h3>
-              Thinkful
-            </h3>
-              <a href="https://www.thinkful.com/" target="_blank">
-              <img class="thumbnail" src="pictures/thinkful.jpg" alt="Thinkful Logo">
-              </a>
-            <p>
-              Enginering Flex Program <br>
-              October 2020
-            </p>
-          </div>
-          <div class="item">
-            <h3>
-              Google IT Certification
-            </h3>
-            <a href="https://grow.google/programs/it-support/" target="_blank">
-            <img class="thumbnail" src="pictures/google.jpg" alt="Google Certification Thumbnail">
-            </a>
-            <p>
-              May 2020
-            </p>
-          </div>
-      </div>
-      <div>
-        <br>
-        <h2 id="Portfolio">
-          Projects:
-        </h2>
-          <div class="group"> <!-- this is not displaying in row format and I am not sure why-->
-            <div class="item">
-              <h3>
-                Neighborhood
-              </h3>
-                <img class="thumbnail" src="pictures/neighborhood.jpg" alt="#">
-                <p> My wife and I recently purchased a House. The process was daunting. 
-                  So I decided to make a website that would allow people to get all the relevant information on an addresss.
-                  I used multiple different API's to call different information such as news, school districts and location information. </p>
-                <p>This project uses a HTML, CSS and JavaScript. The APIs used are Google Maps, Census, School, and Bing News </p>
-                <a href="https://joshua-odell.github.io/neighborhood/"> Check out neighborhood</a>
-                <a href="https://github.com/Joshua-Odell/neighborhood" target="_blank"> GitHub Repository </a> <br>
-            </div>
-            <div class="item">
-              <h3>
-                Tic-Tac-Toe
-              </h3>
-              <img class="thumbnail" src="pictures/tictactoe.jpg" alt="A tic tac toe board">
-                <p> This program began as a simple tutorial for Python. Originally it was only a player vs. player project.
-                   Once I heard that one of Bill Gates first projects was creating a tic tac toe game vs a computer 
-                   I decided to test my skills to make a similar program. This project made me very comfurtable using conditionals 
-                   and logic to produce a semingly independant actor. I got some tips from more experienced people online to reduce the complexity of the 
-                   code. The end result is a program that is entierly capable of beating human players. The computer uses if logic to decide where to play rather then a simple 
-                   random number. Though there is situations where it can act randomly.</p>
-                <p> This project was completed entierly in Python 3</p>
-                <a href="https://github.com/Joshua-Odell/tic-tac-toe" target="_blank"> GitHub Repository </a>
-            </div>
-          </div>
-      </div>
-      <div>
-        <br>
-        <h2 id="Work-History">
-          Work History:
-        </h2>
-        <div class="group">
-          <div class="item">
-            <p> I have three years managment experience and three years security experience. </p>
-          </div> 
-        </div>               
-      </div>
-      <div>
-        <br>
-        <h2 id="About-Me">
-          About Me:
-        </h2>
-        <div class="group" style="flex-direction: column;">
-          <div class="item">
-            <p> I live in Eagan Minnesota, a suburb of Minneapolis-St.Paul. I love learning new things and applying myself to what I do. I am a quick and passionate study.
-              I studied social sciences for my bachelors. Now I am applying my passion for innovation and creativity as a designero get into the tech field I took a Google Certification course in IT. This variety in experience helps me to understand each situation from a different perspective.
-              I look forward to the prospect of working with talented people and learning from them. I am a developer most familiar with web-development with some experience in Python. </p>
-          </div>
-          <div class="group item new" style="flex-direction: column; align-items: center; text-align: center;">
-              <h3 class="item hobbies">
-                My Hobbies Include:
-              </h3>
-              <ul class=" item hobbies"> <!-- I want to place this in the center with bullet points -->
-                <li> Camping in the Boundary Waters
-                <li> Spending time with family and friends
-                <li> Playing video games
-                <li> Taking walks with my wife and new puppy
-              </ul>
-          </div>
-        </div>
-      </div>
-      <div id="Contact-Me" class="group">
-        <form class="form-container" action="https://formspree.io/meqrobbq" method="post">
-          <div class="item">
-            <label for="name">Your name:</label>
-            <input id="name" type="text" name="name" required maxlength="25">
-            <label for="email">Email:</label>
-            <input id="email" type="text" name="email">
-          </div>
-          <div class="message-container">
-            <label for="message"> Message:</label>
-            <textarea id="message" name="message" rows="8" cols="40"></textarea>
-          </div>
-          <div>
-            <button type="submit">Submit</button>
-          </div>
-      </form>
-    </div>
-    </main>
-    <hr>
-    <footer>
-      <div>
-        <ul>
-          <li><a class="fl" href="mailto:joshodell220@gmail.com" target="_blank"> Email </a></li>
-          <li><a class="fl" href="https://github.com/Joshua-Odell" target="_blank"> GitHub </a></li>
-          <li><a class="fl" href="www.linkedin.com/in/joshua-odell-07ab801a1" target="_blank"> Linkedin </a></li>
-        </ul>
-      </div>
-    </footer>
-  </body>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scal=1" />
+		<title>Joshua Odell</title>
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<header class="group">
+			<div>
+				<img
+					class="item profile-picture"
+					src="pictures/josh-alone.jpg"
+					alt="Picture of Josh Odell"
+				/>
+			</div>
+			<h1 class="item-double">Joshua Odell</h1>
+		</header>
+		<nav>
+			<ul id="menu">
+				<li><a href="#Education">Education</a></li>
+				<li><a href="#Portfolio">Projects</a></li>
+				<li><a href="#Work-History">Work History</a></li>
+				<li><a href="#About-Me">About Me</a></li>
+				<li><a href="#Contact-Me">Contact Me</a></li>
+			</ul>
+		</nav>
+		<hr />
+		<main class="wrapper">
+			<br />
+			<h2 id="Education">Education:</h2>
+			<div class="group">
+				<div class="item">
+					<h3>University of Nebraska</h3>
+					<a href="https://www.unomaha.edu/" target="_blank">
+						<img
+							class="thumbnail"
+							src="pictures/UNO.jpg"
+							alt="Univeristy of Nebraska at Omaha Thumbnail"
+						/>
+					</a>
+					<p>
+						Bachelors of Science in Philosophy, Sociology and Religion <br />
+						August 2020
+					</p>
+				</div>
+				<div class="item">
+					<h3>Thinkful</h3>
+					<a href="https://www.thinkful.com/" target="_blank">
+						<img
+							class="thumbnail"
+							src="pictures/thinkful.jpg"
+							alt="Thinkful Logo"
+						/>
+					</a>
+					<p>
+						Enginering Flex Program <br />
+						October 2020
+					</p>
+				</div>
+				<div class="item">
+					<h3>Google IT Certification</h3>
+					<a href="https://grow.google/programs/it-support/" target="_blank">
+						<img
+							class="thumbnail"
+							src="pictures/google.jpg"
+							alt="Google Certification Thumbnail"
+						/>
+					</a>
+					<p>May 2020</p>
+				</div>
+			</div>
+			<div>
+				<br />
+				<h2 id="Portfolio">Projects:</h2>
+				<div class="group">
+					<div class="item">
+						<h3>behavioral Log</h3>
+						<img
+							class="thumbnail"
+							src="pictures/behavior.jpg"
+							alt="A tic tac toe board"
+						/>
+						<p>
+							This project is the one I am proudest of. My wife works in a level
+							four school for children with severe behavior problems. Each time
+							a student has an incident the teachers have to fill out an
+							incident report. This information is then manually coppied
+							multiple times and stored in a Google Doc. The information entered
+							was redundant inaccurate and a significant drain on resources and
+							time. I was able to create a program that streamlined their data
+							entry process. Removing redundant data and replacing it with a
+							secure database structure. This has increased data integrity and
+							efficiency. Through this single app I was able to save them
+							hundreds of hours a month and help them with their difficult work.
+						</p>
+						<p>This project was used React, Node and Postgress.</p>
+						<a
+							href="https://github.com/Joshua-Odell/school-client"
+							target="_blank"
+						>
+							GitHub Client
+						</a>
+						<a
+							href="https://github.com/Joshua-Odell/school-server"
+							target="_blank"
+						>
+							GitHub Server
+						</a>
+						<a href="https://behaviorallog.com/" target="_blank">
+							Live Application
+						</a>
+					</div>
+					<div class="item">
+						<h3>Neighborhood</h3>
+						<img class="thumbnail" src="pictures/neighborhood.jpg" alt="#" />
+						<p>
+							My wife and I recently purchased a House. The process was
+							daunting. So I decided to make a website that would allow people
+							to get all the relevant information on an addresss. I used
+							multiple different API's to call different information such as
+							news, school districts and location information.
+						</p>
+						<p>
+							This project uses a HTML, CSS and JavaScript. The APIs used are
+							Google Maps, Census, School, and Bing News
+						</p>
+						<a href="https://joshua-odell.github.io/neighborhood/">
+							Check out neighborhood</a
+						>
+						<a
+							href="https://github.com/Joshua-Odell/neighborhood"
+							target="_blank"
+						>
+							GitHub Repository
+						</a>
+						<br />
+					</div>
+				</div>
+			</div>
+			<div>
+				<br />
+				<h2 id="Work-History">Work History:</h2>
+				<div class="group">
+					<div class="item">
+						<p>
+							I have three years managment experience and three years security
+							experience.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div>
+				<br />
+				<h2 id="About-Me">About Me:</h2>
+				<div class="group" style="flex-direction: column">
+					<div class="item">
+						<p>
+							I live in Eagan Minnesota, a suburb of Minneapolis-St.Paul. I love
+							learning new things and applying myself to what I do. I am a quick
+							and passionate study. I studied social sciences for my bachelors.
+							Now I am applying my passion for innovation and creativity as a
+							designero get into the tech field I took a Google Certification
+							course in IT. This variety in experience helps me to understand
+							each situation from a different perspective. I look forward to the
+							prospect of working with talented people and learning from them. I
+							am a developer most familiar with web-development with some
+							experience in Python.
+						</p>
+					</div>
+					<div
+						class="group item new"
+						style="
+							flex-direction: column;
+							align-items: center;
+							text-align: center;
+						"
+					>
+						<h3 class="item hobbies">My Hobbies Include:</h3>
+						<ul class="item hobbies">
+							<!-- I want to place this in the center with bullet points -->
+							<li>Camping in the Boundary Waters</li>
+							<li>Spending time with family and friends</li>
+							<li>Playing video games</li>
+							<li>Taking walks with my wife and new puppy</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="Contact-Me" class="group">
+				<form
+					class="form-container"
+					action="https://formspree.io/meqrobbq"
+					method="post"
+				>
+					<div class="item">
+						<label for="name">Your name:</label>
+						<input id="name" type="text" name="name" required maxlength="25" />
+						<label for="email">Email:</label>
+						<input id="email" type="text" name="email" />
+					</div>
+					<div class="message-container">
+						<label for="message"> Message:</label>
+						<textarea id="message" name="message" rows="8" cols="40"></textarea>
+					</div>
+					<div>
+						<button type="submit">Submit</button>
+					</div>
+				</form>
+			</div>
+		</main>
+		<hr />
+		<footer>
+			<div>
+				<ul>
+					<li>
+						<a class="fl" href="mailto:joshodell220@gmail.com" target="_blank">
+							Email
+						</a>
+					</li>
+					<li>
+						<a
+							class="fl"
+							href="https://github.com/Joshua-Odell"
+							target="_blank"
+						>
+							GitHub
+						</a>
+					</li>
+					<li>
+						<a
+							class="fl"
+							href="www.linkedin.com/in/joshua-odell-07ab801a1"
+							target="_blank"
+						>
+							Linkedin
+						</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+	</body>
 </html>
