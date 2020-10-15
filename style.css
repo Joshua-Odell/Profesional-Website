@@ -27,6 +27,8 @@ h1 {
 	color: white;
 	align-items: center;
 	padding-left: 20px;
+	font-size: 7vw;
+	vertical-align: sub;
 }
 
 h2 {
@@ -57,15 +59,23 @@ p {
 
 .button-item {
 	width: 20%;
+	min-width: 150px;
 	border-style: solid;
 	border-color: black;
+	margin: auto;
 }
 
 .button-group {
+	height: 40%;
 	display: flex;
 	margin: auto;
-	flex-direction: row;
+	padding-top: 10%;
+	flex-direction: column;
 	justify-content: space-around;
+}
+
+.title {
+	/* height: 30%; */
 }
 
 /* nav {
@@ -186,14 +196,18 @@ footer {
 	text-align: left;
 }
 
-@media all and (min-width: 800px) {
-	h1 {
+@media all and (min-width: 600px) {
+	/* h1 {
 		font-size: 150px;
 		vertical-align: sub;
-	}
+	} */
 
 	body div {
 		margin-top: 25px;
+	}
+
+	.button-group {
+		flex-direction: row;
 	}
 
 	.group {
@@ -219,7 +233,7 @@ footer {
 		text-align: left;
 	}
 
-	h1 {
+	/* h1 {
 		justify-content: flex-end;
-	}
+	} */
 }
