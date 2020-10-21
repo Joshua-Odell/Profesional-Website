@@ -14,11 +14,15 @@ body .card {
 	border-style: solid;
 	border-color: rgb(20, 19, 107);
 	background-color: #266aa1;
-	color: #d8c6ba;
+	color: #ffebde;
 }
 
 body div {
 	text-align: center;
+}
+
+img {
+	/* height: 45%; */
 }
 
 h1 {
@@ -73,6 +77,22 @@ p {
 	padding-top: 10%;
 	flex-direction: column;
 	justify-content: space-around;
+}
+
+.description-item {
+}
+
+.description-group {
+	display: flex;
+	margin: auto;
+	flex-direction: row;
+}
+
+.image-item {
+	width: 90%;
+}
+
+.image-group {
 }
 
 .title {
