@@ -2,7 +2,7 @@
 
 body {
 	background-color: #22292e;
-	color: #b4ab5b;
+	color: #ffffff;
 }
 
 header {
@@ -49,12 +49,13 @@ p {
 
 #menu {
 	display: inline-flex;
+	flex-direction: column;
 	overflow: hidden;
 	position: fixed;
 	bottom: 0;
 	width: 100%;
 	margin: auto;
-	height: 5%;
+	height: 100px;
 	background-color: black;
 	align-items: center;
 	justify-content: space-around;
@@ -117,12 +118,11 @@ nav ul {
 }
 
 .documents ul {
-	color: white;
+	color: #ffffff;
 }
 
 .documents li a {
-	color: white;
-	list-style-type: ;
+	color: #ffffff;
 }
 
 nav ul li {
@@ -157,7 +157,7 @@ footer {
 }
 
 footer ul li a {
-	color: white;
+	color: #ffffff;
 	text-decoration: none;
 	padding: 0 20px 0 0;
 }
@@ -186,6 +186,7 @@ nav ul li a:hover {
 	justify-content: center;
 	flex-wrap: wrap;
 	padding-bottom: 10px;
+	margin: auto;
 }
 
 .group img {
@@ -211,13 +212,11 @@ nav ul li a:hover {
 /* the color should be white for the links in the footer*/
 footer {
 	background-color: black;
-	color: white;
+	color: #ffffff;
 }
 
-.fl {
-	link: white;
-	visited: blue;
-	hover: green;
+a {
+	color: aqua;
 }
 
 .message-container {
@@ -233,7 +232,25 @@ footer {
 	text-align: left;
 }
 
+.contact-group {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	justify-content: space-around;
+}
+
+.contact-item {
+	flex: 1;
+	margin: 10px;
+	max-width: 70%;
+}
+
 @media all and (min-width: 600px) {
+	#menu {
+		flex-direction: row;
+		height: 5%;
+	}
+
 	/* h1 {
 		font-size: 150px;
 		vertical-align: sub;
@@ -268,6 +285,12 @@ footer {
 		display: block;
 		list-style-position: inside;
 		text-align: left;
+	}
+
+	.contact-group {
+		display: flex;
+		flex-direction: row;
+		margin: auto;
 	}
 
 	/* h1 {
