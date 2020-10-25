@@ -10,6 +10,8 @@ header {
 	background-image: url(pictures/background.jpg);
 }
 
+/*  This is found in the education section */
+
 body .card {
 	border-style: solid;
 	border-color: rgb(20, 19, 107);
@@ -19,10 +21,6 @@ body .card {
 
 body div {
 	text-align: center;
-}
-
-img {
-	/* height: 45%; */
 }
 
 h1 {
@@ -62,9 +60,11 @@ p {
 	color: #b4ab5b;
 }
 
+/* The button classes belong to the links on the homepage to each project page */
+
 .button-item {
 	width: 20%;
-	min-width: 150px;
+	min-width: 200px;
 	border-style: solid;
 	border-color: black;
 	margin: auto;
@@ -80,38 +80,25 @@ p {
 	justify-content: space-around;
 }
 
-.description-item {
+.meta-contact-group {
+	display: flex;
+	margin: auto;
+	flex-direction: column-reverse;
 }
+
+/* This class is shared on multiple pages and is a boilerplate for flexbox */
 
 .description-group {
 	display: flex;
 	margin: auto;
-	flex-direction: row;
+	flex-direction: column-reverse;
 }
 
 .image-item {
 	width: 90%;
 }
 
-.image-group {
-}
-
-.title {
-	/* height: 30%; */
-}
-
-/* nav {
-	display: flex;
-	justify-content: center;
-	background-color: black;
-} */
-/* 
-nav ul {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	padding-bottom: 0;
-} */
+/* The document sections can be found in the contact page */
 
 .documents h3 {
 	font-weight: lighter;
@@ -125,6 +112,8 @@ nav ul {
 	color: #ffffff;
 }
 
+/* This is used for the navigation bar at the bottom of the screen */
+
 nav ul li {
 	list-style-type: none;
 }
@@ -135,13 +124,12 @@ nav ul li a {
 	padding: 0 20px 0 0;
 }
 
+/* The contact page specific css */
+
 #Contact-Me {
 	display: flex;
 	justify-content: center;
 	list-style-type: none;
-}
-
-footer {
 }
 
 #Contact-Me ul {
@@ -197,17 +185,12 @@ nav ul li a:hover {
 	width: 100%;
 }
 
-/* need to adress the size of the profile picture in mobile*/
+/* need to address the size of the profile picture in mobile*/
 .profile-picture {
 	max-width: 600px;
 	height: auto;
 	width: auto\9;
 }
-
-/* need to figure out how to change this relative to the screen*/
-/* .thumbnail {
-	width: 200px;
-} */
 
 /* the color should be white for the links in the footer*/
 footer {
@@ -237,24 +220,18 @@ a {
 	flex-direction: column;
 	margin: auto;
 	justify-content: space-around;
+	max-height: 10%;
 }
 
 .contact-item {
 	flex: 1;
-	margin: 10px;
-	max-width: 70%;
 }
 
-@media all and (min-width: 600px) {
+@media all and (min-width: 700px) {
 	#menu {
 		flex-direction: row;
 		height: 5%;
 	}
-
-	/* h1 {
-		font-size: 150px;
-		vertical-align: sub;
-	} */
 
 	body div {
 		margin-top: 25px;
@@ -293,7 +270,15 @@ a {
 		margin: auto;
 	}
 
-	/* h1 {
-		justify-content: flex-end;
-	} */
+	.description-group {
+		flex-direction: row;
+	}
+
+	.meta-contact-group {
+		flex-direction: column;
+	}
+
+	.contact-item {
+		margin: 40px;
+	}
 }
