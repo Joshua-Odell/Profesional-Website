@@ -45,11 +45,10 @@ p {
 	font-family: 'Noto Serif JP', serif;
 }
 
-#menu {
+.menu {
 	display: inline-flex;
 	flex-direction: column;
 	overflow: hidden;
-	position: fixed;
 	bottom: 0;
 	width: 100%;
 	margin: auto;
@@ -58,6 +57,7 @@ p {
 	align-items: center;
 	justify-content: space-around;
 	color: #b4ab5b;
+	margin-top: 5%;
 }
 
 /* The button classes belong to the links on the homepage to each project page */
@@ -130,6 +130,7 @@ nav ul li a {
 	display: flex;
 	justify-content: center;
 	list-style-type: none;
+	width: 80%;
 }
 
 #Contact-Me ul {
@@ -142,20 +143,21 @@ nav ul li a {
 #Contact-Me ul li {
 	list-style-type: none;
 	margin: 0 70px 0px 70px;
+	/* width: 2px; */
 }
-
+/* 
 footer ul li a {
 	color: #ffffff;
 	text-decoration: none;
 	padding: 0 20px 0 0;
-}
+} */
 
 form {
 	display: block;
 }
 
 nav ul li a:hover {
-	color: blue;
+	color: white;
 }
 
 .item-double {
@@ -192,12 +194,6 @@ nav ul li a:hover {
 	width: auto\9;
 }
 
-/* the color should be white for the links in the footer*/
-footer {
-	background-color: black;
-	color: #ffffff;
-}
-
 a {
 	color: aqua;
 }
@@ -219,8 +215,11 @@ a {
 	display: flex;
 	flex-direction: column;
 	margin: auto;
-	justify-content: space-around;
-	max-height: 10%;
+	justify-content: space-between;
+}
+
+.thumbnail {
+	width: 13vw;
 }
 
 .contact-item {
@@ -228,9 +227,10 @@ a {
 }
 
 @media all and (min-width: 700px) {
-	#menu {
+	.menu {
 		flex-direction: row;
 		height: 5%;
+		position: fixed;
 	}
 
 	body div {
@@ -248,10 +248,6 @@ a {
 	.wrapper {
 		width: 70%;
 		margin: auto;
-	}
-
-	.thumbnail {
-		width: 200px;
 	}
 
 	.profile-picture {
