@@ -2,14 +2,7 @@
 
 body {
 	background-color: #22292e;
-<<<<<<< Updated upstream
 	color: #ffffff;
-=======
-	background-image: url(pictures/BW.jpg);
-	background-repeat: no-repeat;
-	color: #000000;
-	/* background-size: auto; */
->>>>>>> Stashed changes
 }
 
 header {
@@ -23,7 +16,7 @@ body .card {
 	border-style: solid;
 	border-color: rgb(20, 19, 107);
 	background-color: #266aa1;
-	color: #000000;
+	color: #ffebde;
 }
 
 body div {
@@ -60,40 +53,22 @@ p {
 	width: 100%;
 	margin: auto;
 	height: 100px;
-	background-color: rgb(172, 172, 172);
+	background-color: black;
 	align-items: center;
 	justify-content: space-around;
 	color: #b4ab5b;
 	margin-top: 5%;
 }
 
-.grow {
-	transition: all 0.2s ease-in-out;
-}
-
-.grow:hover {
-	transform: scale(1.5);
-}
-
 /* The button classes belong to the links on the homepage to each project page */
 
 .button-item {
-<<<<<<< Updated upstream
 	width: 20%;
-=======
-	width: 50%;
-	min-height: 40px;
->>>>>>> Stashed changes
 	min-width: 200px;
 	border-style: solid;
 	border-color: black;
 	margin: auto;
 	margin-top: 5%;
-<<<<<<< Updated upstream
-=======
-	font-family: 'Noto Serif JP', serif;
-	font-size: large;
->>>>>>> Stashed changes
 }
 
 .button-group {
@@ -109,24 +84,6 @@ p {
 	display: flex;
 	margin: auto;
 	flex-direction: column-reverse;
-}
-
-.button-image-item {
-	width: 50%;
-	min-width: 200px;
-	border-style: solid;
-	margin: auto;
-	margin-top: 5%;
-	font-family: 'MedievalSharp', cursive;
-	border: none;
-	background-color: transparent;
-	font-size: x-large;
-}
-
-.button-image-group {
-	display: flex;
-	flex-direction: column;
-	margin: auto;
 }
 
 /* This class is shared on multiple pages and is a boilerplate for flexbox */
@@ -148,11 +105,11 @@ p {
 }
 
 .documents ul {
-	color: #000000;
+	color: #ffffff;
 }
 
 .documents li a {
-	color: #0c0909;
+	color: #ffffff;
 }
 
 /* This is used for the navigation bar at the bottom of the screen */
@@ -162,7 +119,7 @@ nav ul li {
 }
 
 nav ul li a {
-	color: rgb(10, 71, 10);
+	color: #b4ab5b;
 	text-decoration: none;
 	padding: 0 20px 0 0;
 }
@@ -188,6 +145,13 @@ nav ul li a {
 	margin: 0 70px 0px 70px;
 	/* width: 2px; */
 }
+/* 
+footer ul li a {
+	color: #ffffff;
+	text-decoration: none;
+	padding: 0 20px 0 0;
+} */
+
 form {
 	display: block;
 }
@@ -231,7 +195,7 @@ nav ul li a:hover {
 }
 
 a {
-	color: rgb(10, 71, 10);
+	color: aqua;
 }
 
 .message-container {
@@ -313,25 +277,4 @@ a {
 	.contact-item {
 		margin: 40px;
 	}
-<<<<<<< Updated upstream
-=======
-
-	.title {
-		width: 100%;
-		overflow: hidden;
-		margin-left: 100px;
-		max-width: 90%;
-	}
-
-	.title h1 {
-		animation: 1s slide-right 1s forwards;
-		transform: translateX(-100%);
-	}
-
-	@keyframes slide-right {
-		to {
-			transform: translateX(0);
-		}
-	}
->>>>>>> Stashed changes
 }
