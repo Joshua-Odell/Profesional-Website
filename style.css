@@ -2,49 +2,45 @@
 
 body {
 	background-color: #22292e;
-	color: #ffffff;
+	background-image: url(pictures/BW.jpg);
+	background-repeat: no-repeat;
+	color: #000000;
+	/* background-size: auto; */
 }
 
 header {
 	background-color: black;
 	background-image: url(pictures/background.jpg);
 }
-
 /*  This is found in the education section */
-
 body .card {
 	border-style: solid;
 	border-color: rgb(20, 19, 107);
 	background-color: #266aa1;
-	color: #ffebde;
+	color: #000000;
 }
 
 body div {
 	text-align: center;
 }
-
 h1 {
 	text-align: left;
 	font-family: 'Cardo', serif;
-	color: white;
+	color: rgb(0, 0, 0);
 	align-items: center;
 	padding-left: 20px;
 	font-size: 7vw;
 	vertical-align: sub;
 }
-
 h2 {
 	font-family: 'Domine', serif;
 }
-
 h3 {
 	font-family: 'Archivo', sans-serif;
 }
-
 p {
 	font-family: 'Noto Serif JP', serif;
 }
-
 .menu {
 	display: inline-flex;
 	flex-direction: column;
@@ -53,22 +49,33 @@ p {
 	width: 100%;
 	margin: auto;
 	height: 100px;
-	background-color: black;
+	background-color: rgb(172, 172, 172);
 	align-items: center;
 	justify-content: space-around;
 	color: #b4ab5b;
 	margin-top: 5%;
 }
 
+.grow {
+	transition: all 0.2s ease-in-out;
+}
+
+.grow:hover {
+	transform: scale(1.5);
+}
+
 /* The button classes belong to the links on the homepage to each project page */
 
 .button-item {
-	width: 20%;
+	width: 50%;
+	min-height: 40px;
 	min-width: 200px;
 	border-style: solid;
 	border-color: black;
 	margin: auto;
 	margin-top: 5%;
+	font-family: 'Noto Serif JP', serif;
+	font-size: large;
 }
 
 .button-group {
@@ -79,11 +86,28 @@ p {
 	flex-direction: column;
 	justify-content: space-around;
 }
-
 .meta-contact-group {
 	display: flex;
 	margin: auto;
 	flex-direction: column-reverse;
+}
+
+.button-image-item {
+	width: 50%;
+	min-width: 200px;
+	border-style: solid;
+	margin: auto;
+	margin-top: 5%;
+	font-family: 'MedievalSharp', cursive;
+	border: none;
+	background-color: transparent;
+	font-size: x-large;
+}
+
+.button-image-group {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
 }
 
 /* This class is shared on multiple pages and is a boilerplate for flexbox */
@@ -93,83 +117,65 @@ p {
 	margin: auto;
 	flex-direction: column-reverse;
 }
-
 .image-item {
 	width: 90%;
 }
-
 /* The document sections can be found in the contact page */
-
 .documents h3 {
 	font-weight: lighter;
 }
 
 .documents ul {
-	color: #ffffff;
+	color: #000000;
 }
 
 .documents li a {
-	color: #ffffff;
+	color: #0c0909;
 }
 
 /* This is used for the navigation bar at the bottom of the screen */
-
 nav ul li {
 	list-style-type: none;
 }
 
 nav ul li a {
-	color: #b4ab5b;
+	color: rgb(10, 71, 10);
 	text-decoration: none;
 	padding: 0 20px 0 0;
 }
-
 /* The contact page specific css */
-
 #Contact-Me {
 	display: flex;
 	justify-content: center;
 	list-style-type: none;
 	width: 80%;
 }
-
 #Contact-Me ul {
 	display: flex;
 	flex-direction: flex;
 	flex-wrap: wrap;
 	margin: 0 0 10px 0;
 }
-
 #Contact-Me ul li {
 	list-style-type: none;
 	margin: 0 70px 0px 70px;
 	/* width: 2px; */
 }
-/* 
-footer ul li a {
-	color: #ffffff;
-	text-decoration: none;
-	padding: 0 20px 0 0;
-} */
 
 form {
 	display: block;
 }
-
 nav ul li a:hover {
 	color: white;
 }
-
 .item-double {
 	flex: 2;
 	margin: 10px;
 }
-
 .item {
 	flex: 1;
 	margin: 10px;
 }
-
 .group {
 	display: flex;
 	flex-direction: column;
@@ -178,15 +184,12 @@ nav ul li a:hover {
 	padding-bottom: 10px;
 	margin: auto;
 }
-
 .group img {
 	width: 90%;
 }
-
 .wrapper {
 	width: 100%;
 }
-
 /* need to address the size of the profile picture in mobile*/
 .profile-picture {
 	max-width: 600px;
@@ -195,7 +198,7 @@ nav ul li a:hover {
 }
 
 a {
-	color: aqua;
+	color: rgb(10, 71, 10);
 }
 
 .message-container {
@@ -204,77 +207,80 @@ a {
 	width: 100%;
 	max-width: 644px;
 }
-
 .hobbies {
 	display: block;
 	list-style-position: inside;
 	text-align: left;
 }
-
 .contact-group {
 	display: flex;
 	flex-direction: column;
 	margin: auto;
 	justify-content: space-between;
 }
-
 .thumbnail {
 	width: 13vw;
 }
-
 .contact-item {
 	flex: 1;
 }
-
 @media all and (min-width: 700px) {
 	.menu {
 		flex-direction: row;
 		height: 5%;
 		position: fixed;
 	}
-
 	body div {
 		margin-top: 25px;
 	}
-
 	.button-group {
 		flex-direction: row;
 	}
-
 	.group {
 		flex-direction: row;
 	}
-
 	.wrapper {
 		width: 70%;
 		margin: auto;
 	}
-
 	.profile-picture {
 		width: 33%;
 	}
-
 	.hobbies {
 		display: block;
 		list-style-position: inside;
 		text-align: left;
 	}
-
 	.contact-group {
 		display: flex;
 		flex-direction: row;
 		margin: auto;
 	}
-
 	.description-group {
 		flex-direction: row;
 	}
-
 	.meta-contact-group {
 		flex-direction: column;
 	}
-
 	.contact-item {
 		margin: 40px;
+	}
+
+	.title {
+		width: 100%;
+		overflow: hidden;
+		margin-left: 100px;
+		max-width: 90%;
+	}
+
+	.title h1 {
+		animation: 1s slide-right 1s forwards;
+		transform: translateX(-100%);
+	}
+
+	@keyframes slide-right {
+		to {
+			transform: translateX(0);
+		}
 	}
 }
