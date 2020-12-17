@@ -225,6 +225,20 @@ a {
 .contact-item {
 	flex: 1;
 }
+
+.about-me-group {
+	flex-direction: column;
+	align-content: space-between;
+}
+
+.about-me-item {
+	background-color: #cfdfe4;
+}
+
+.about-me-group-total {
+	flex-direction: row;
+}
+
 @media all and (min-width: 700px) {
 	.menu {
 		flex-direction: row;
