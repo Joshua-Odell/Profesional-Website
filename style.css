@@ -4,6 +4,7 @@ body {
 	background-color: #22292e;
 	background-image: url(pictures/BW.jpg);
 	background-repeat: no-repeat;
+	background-size: cover;
 	color: #000000;
 	/* background-size: auto; */
 }
@@ -56,6 +57,7 @@ p {
 	justify-content: space-around;
 	color: #b4ab5b;
 	margin-top: 5%;
+	position: fixed;
 }
 
 .grow {
@@ -141,6 +143,7 @@ nav ul li {
 }
 
 nav ul li a {
+	font-size: 150%;
 	color: rgb(10, 71, 10);
 	text-decoration: none;
 	padding: 0 20px 0 0;
@@ -226,6 +229,20 @@ a {
 .contact-item {
 	flex: 1;
 }
+
+.about-me-group {
+	flex-direction: column;
+	align-content: space-between;
+}
+
+.about-me-item {
+	background-color: #cfdfe4;
+}
+
+.about-me-group-total {
+	flex-direction: row;
+}
+
 @media all and (min-width: 700px) {
 	.menu {
 		flex-direction: row;
